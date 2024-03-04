@@ -1,0 +1,69 @@
+#home-wrapper {
+  width: 200vw;
+  display: flex;
+  overflow: hidden;
+}
+.home {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+}
+.home-heading {
+  margin-left: 30rem;
+  font-family: "Poppins";
+  text-transform: uppercase;
+}
+.home-heading span {
+  position: relative;
+  font-size: 10px;
+}
+.home-heading span::before {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  left: -25px;
+  width: 20px;
+  height: 2px;
+  background-color: red;
+}
+.home-heading h1 {
+  font-size: 65px;
+  width: min-content;
+}
+.hero {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
+#home-men {
+  background: #e3e3e3;
+}
+#home-women {
+  background: #fff5e6;
+}
+
+.animateMen {
+  animation: slide-men 0.5s forwards;
+}
+.animateWomen {
+  animation: slide-women 0.5s forwards;
+}
+
+@keyframes slide-men {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes slide-women {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,41 @@
+header {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+header svg {
+  font-size: 2rem;
+  color: black;
+}
+#switch-button {
+  border: none;
+  background: none;
+}
+#my-cart button {
+  position: relative;
+  border: none;
+  background: none;
+}
+#my-cart svg {
+  font-size: 2rem;
+}
+#my-cart span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  background: red;
+  border-radius: 100%;
+  color: white;
+  position: absolute;
+  top: 25px;
+  right: 5px;
+  font-size: 10px;
+}
