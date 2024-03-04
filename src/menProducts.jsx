@@ -16,13 +16,8 @@ function MenProducts() {
       {menProducts &&
         menProducts.map((product) => {
           return (
-            <li>
-              <Product
-                key={product.id}
-                title={product.title}
-                image={product.image}
-                price={product.price}
-              />
+            <li key={product.id}>
+              <Product item={product} />
             </li>
           );
         })}
