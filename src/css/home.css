@@ -6,12 +6,12 @@
 .home {
   position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100vw;
   height: 70vh;
 }
 .home-heading {
-  margin-left: 30rem;
   font-family: "Poppins";
   text-transform: uppercase;
 }
@@ -31,11 +31,6 @@
 .home-heading h1 {
   font-size: 65px;
   width: min-content;
-}
-.hero {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
 }
 #home-men {
   background: #e3e3e3;

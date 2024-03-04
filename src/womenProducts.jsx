@@ -12,19 +12,21 @@ function WomenProducts() {
       });
   }, []);
   return (
-    <div id="products">
+    <ul id="products">
       {womenProducts &&
         womenProducts.map((product) => {
           return (
-            <Product
-              key={product.id}
-              title={product.title}
-              image={product.image}
-              price={product.price}
-            />
+            <li>
+              <Product
+                key={product.id}
+                title={product.title}
+                image={product.image}
+                price={product.price}
+              />
+            </li>
           );
         })}
-    </div>
+    </ul>
   );
 }
 
